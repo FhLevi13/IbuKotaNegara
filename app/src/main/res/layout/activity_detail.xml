@@ -4,13 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#2F8584">
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_ibukota"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:listitem="@layout/item_card"/>
+    tools:context=".DetailActivity">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
