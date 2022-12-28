@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -33,25 +34,18 @@ public class MainActivity extends AppCompatActivity {
         rvIbukota.setAdapter(adapterCard);
     }
 
-//    private void tampilAbout(){
-//        rvIbukota.setLayoutManager(new LinearLayoutManager(this));
-//        About aboutTentang = new About(data, MainActivity.this);
-//        rvIbukota.setAdapter(aboutTentang);
-//    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_node, menu);
+        getMenuInflater().inflate(R.menu.menu_about, menu);
         return super.onCreateOptionsMenu(menu);
     }
 
-//    @Override
-//    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-//        switch (item.getItemId()){
-//            case R.id.menu_about:
-//                tampilAbout();
-//                break;
-//        }
-//        return super.onOptionsItemSelected(item);
-//    }
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (item.getItemId() == R.id.menu_about) {
+            Intent pindah = new Intent(MainActivity.this, About.class);
+            startActivity(pindah);
+        }
+        return super.onOptionsItemSelected(item);
+    }
 }

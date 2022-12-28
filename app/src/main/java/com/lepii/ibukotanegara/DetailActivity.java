@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +15,7 @@ public class DetailActivity extends AppCompatActivity {
     private ImageView ivFoto;
     private TextView tvNama, tvTentang;
     private String yNama, yTentang, yFoto;
+    private Button btnLokasi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,5 +38,11 @@ public class DetailActivity extends AppCompatActivity {
                 .load(yFoto)
                 .into(ivFoto);
 
+        btnLokasi.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
     }
 }
