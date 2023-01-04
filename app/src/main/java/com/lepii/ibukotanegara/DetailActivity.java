@@ -25,6 +25,7 @@ public class DetailActivity extends AppCompatActivity {
         ivFoto = findViewById(R.id.iv_foto);
         tvNama = findViewById(R.id.tv_nama);
         tvTentang = findViewById(R.id.tv_tentang);
+        btnLokasi = findViewById(R.id.btn_lokasi);
 
         Intent ambil = getIntent();
         yNama = ambil.getStringExtra("xNama");
