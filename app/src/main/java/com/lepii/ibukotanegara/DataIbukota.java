@@ -36,14 +36,14 @@ public class DataIbukota {
                     "Phnom Penh (bahasa Khmer: aksara Mul PhPenh1.png; gaya biasa ភ្នំពេញ) adalah ibu kota dan kota terbesar di Kamboja, Terletak di tepi Sungai Mekong, Phnom Penh telah berkembang menjadi pusat negara dan pusat industri kegiatan perekonomian, serta pusat keamanan, politik, ekonomi, warisan budaya dan pemerintahan Kamboja. Phnom Penh terletak di depan Sungai Mekong, yang merupakan sungai utama di Asia dengan panjang 4.200 km (2.610 mil). Sungai ini melintasi Kamboja dari Utara ke Selatan dengan panjang total 486 km (302 mil) ,Phnom penh Pernah dikenal sebagai “Mutiara Asia”.","https://fhlevi13.github.io/img/ibu-kota-negara/Phnom-Penh.jpeg"}
     };
     public static ArrayList<ModelIbukota> ambilDataIbukota() {
-        ArrayList<ModelIbukota> dataPahlawan = new ArrayList<>();
+        ArrayList<ModelIbukota> dataIbukota = new ArrayList<>();
         for (String[] varData : data) {
             ModelIbukota model = new ModelIbukota();
             model.setNama(varData[0]);
             model.setTentang(varData[1]);
             model.setFoto(varData[2]);
-            dataPahlawan.add(model);
+            dataIbukota.add(model);
         }
-        return dataPahlawan;
+        return dataIbukota;
     }
 }

@@ -3,6 +3,7 @@ package com.lepii.ibukotanegara;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -42,7 +43,9 @@ public class DetailActivity extends AppCompatActivity {
         btnLokasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Uri location = Uri.parse("geo:0,0?q=" + yNama);
+                Intent bukaLokasi = new Intent(Intent.ACTION_VIEW, location);
+                startActivity(bukaLokasi);
             }
         });
     }
